@@ -3,7 +3,7 @@ from operator import attrgetter
 
 
 class ZooManager:
-    def __init__(self, all_animals: list):
+    def __init__(self, all_animals: list = None):
         self.__all_animals = all_animals
 
     @property
@@ -13,9 +13,6 @@ class ZooManager:
     @all_animals.setter
     def all_animals(self, new_animals_list: list):
         self.__all_animals = new_animals_list.copy()
-
-    def add_animals(self, new_animals: list):
-        self.__all_animals.extend(new_animals)
 
     def sort_list_by_animal_type(self, animal_list=None, sort_order=SortOrder.ASC):
         if animal_list is None:
