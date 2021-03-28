@@ -1,6 +1,6 @@
 class Aquarium:
-    def __init__(self, capacity_in_liters, supported_min_temperature, supported_max_temperature,
-                 supported_lighting_level, inhabitants=None):
+    def __init__(self, capacity_in_liters=0, supported_min_temperature=0, supported_max_temperature=0,
+                 supported_lighting_level=None, inhabitants=None):
         self.capacity_in_liters = capacity_in_liters
         self.supported_min_temperature = supported_min_temperature
         self.supported_max_temperature = supported_max_temperature

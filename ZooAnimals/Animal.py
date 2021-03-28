@@ -1,5 +1,9 @@
+from Enumerators.Thermoregulation import ThermoregulationType
+
+
 class Animal:
-    def __init__(self, weight_in_kg, thermoregulation, lifetime_in_years, animal_type):
+    def __init__(self, weight_in_kg=0, thermoregulation=None,
+                 lifetime_in_years=0, animal_type="Not specified"):
         self._weight_in_kg = weight_in_kg
         self.THERMOREGULATION = thermoregulation
         self._lifetime_in_years = lifetime_in_years

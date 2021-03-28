@@ -5,7 +5,7 @@ from operator import attrgetter
 
 
 class AquariumsManager(ZooManager):
-    def __init__(self, all_aquarium_animals: list, all_aquariums: list):
+    def __init__(self, all_aquarium_animals: list = None, all_aquariums: list = None):
         self.__all_aquarium_animals = all_aquarium_animals
         self.all_aquariums = all_aquariums
 
@@ -16,9 +16,6 @@ class AquariumsManager(ZooManager):
     @all_aquarium_animals.setter
     def all_aquarium_animals(self, new_animals_list: list):
         self.__all_aquarium_animals = new_animals_list.copy()
-
-    def add_animals(self, new_animals: list):
-        self.__all_aquarium_animals.extend(new_animals)
 
     def change_animal_aquarium(self, animal, new_aquarium: Aquarium):
         if animal not in self.__all_aquarium_animals:
