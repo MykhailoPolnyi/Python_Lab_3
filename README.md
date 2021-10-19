@@ -1,4 +1,4 @@
-<H3># Python_Lab_3</H3>
+# Python_Lab_3
 <H4>Task:</H4>
 <p>Write the code to the task from Lab№2<p>
 
@@ -10,7 +10,7 @@ Implement the possibility of sorting animals for the capacity of the aquarium, i
 Implementation of sorting provides the ability to sort both for ascending and descending order</p>
 
 
-<H3># Python_Lab_4</H3>
+# Python_Lab_4
 <H4>Task:</H4>
 <p>1.Write tests to perevious task(Lab_3).<br>
 2.Code tests coverage should be 70%.<br>
